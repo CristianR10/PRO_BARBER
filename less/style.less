@@ -1,0 +1,35 @@
+@import "fonts.less";
+@import "variaveis_color.less";
+
+.topo {
+    font-family: @base_fonts;
+    width: 100%;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    background: @color_black;
+
+    .topo__img {
+        display: flex;
+
+        .topo--logo {
+            width: 86px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+    }
+
+    .topo__dayWeek {
+        .topo__week {
+            margin-top: 10px;
+
+            .topo--hours,
+            .topo--day {
+                color: @color_white;
+                font-size: @font_size;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }    
+}
